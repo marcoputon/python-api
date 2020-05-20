@@ -20,7 +20,7 @@ class Config:
         self.database = None
 
         # Config paths
-        self.CONNECTION_NAME = "\connection.config"
+        self.CONNECTION_NAME = "/connection.config"
 
         self.HOME_DIR = self.get_home_dir()
         self.CONNECTION_CONFIG_DIR = self.HOME_DIR + self.CONNECTION_NAME
