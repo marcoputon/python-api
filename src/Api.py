@@ -7,15 +7,16 @@ class Api:
         # Pode haver tokens vencidos
         self.authentication_list = []
 
-        # Configurações de conexão com o banco
+        # Configurações de conexão com o banco.
         self.config = None
 
         # Lista de endpoints dinâmicos. São carregados do arquivo e/ou 
-        # cadastrados por usuário. Por enquanto, apenas do arquivo
+        # cadastrados por usuário. Por enquanto, apenas do arquivo.
         self.dynamic_endpoints = []
 
+
     '''
-    A api possui 3 métodos básicos: login, logout e isLoged
+    A api possui 3 métodos básicos: login, logout e isLoged.
     '''
 
     def login (self, user, password):

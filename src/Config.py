@@ -8,7 +8,7 @@ Arquivo de configurações.
 Os atributos de conexão são criados dinamicamente. Estão definidos apenas 
 para não dar erro na IDE, mas não é necessário.
 
-Todo - Criptografar senhas 
+Todo - Criptografar senhas.
 '''
 class Config:
     def __init__(self):
@@ -28,7 +28,7 @@ class Config:
 
     ''' 
     Carrega o arquivo de configurações de conexão e cria os atributos da 
-    classe dinamicamente
+    classe dinamicamente.
     '''
     def load_config (self):
         with open(self.HOME_DIR + "/connection.config") as file:
@@ -39,7 +39,7 @@ class Config:
     
     '''
     Retorna o diretódio de configurações da aplicação.
-    Precisa da variável de ambiente API_HOME 
+    Precisa da variável de ambiente API_HOME .
     '''
     def get_home_dir (self):
         return os.environ.get('API_HOME')
