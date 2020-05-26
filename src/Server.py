@@ -5,6 +5,8 @@ from flask_restful import Resource
 
 # Todo - Separar em outro arquivo
 from services.authentication.LoginResource import LoginResource
+from services.user.UserRegisterResource import UserRegisterResource
+from services.user.UserExistsResource import UserExistsResource
 
 
 class Server:
@@ -62,3 +64,5 @@ class Server:
     # Todo - Separar em outro arquivo
     def init_resources (self):
         self.flask_api.add_resource(LoginResource, '/login')
+        self.flask_api.add_resource(UserRegisterResource, '/register')
+        self.flask_api.add_resource(UserExistsResource, '/user-exists')
